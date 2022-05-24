@@ -1,10 +1,10 @@
 export class Personaje {
     serie = 'Game of Thrones';
-    constructor(name, family, age, alive, communicate) {
+    alive = true;
+    constructor(name, family, age, communicate) {
         this.name = name;
         this.family = family;
         this.age = age;
-        this.alive = true;
         this.communicate = communicate;
     }
     death() {
