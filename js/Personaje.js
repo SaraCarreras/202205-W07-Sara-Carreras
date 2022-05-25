@@ -13,9 +13,4 @@ export class Personaje {
     phrase() {
         return this.communicate;
     }
-    typeOfCharacter(a) {
-        const typeOfCharacters = ['adviser', 'king', 'knight', 'squire'];
-        const position = typeOfCharacters[a];
-        return position;
-    }
 }
