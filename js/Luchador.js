@@ -13,9 +13,15 @@ export class Luchador extends Personaje {
     phrase() {
         super.phrase(this.communicate);
     }
-}
 
-/*
-acceder a phrase-> this.character.message
-a
-*/
+    specialSkills() {
+        return `
+         <ul class="list-unstyled">                  
+            <li>Arma: ${this.weapon}</li>
+            <li>Destreza: ${this.skill}</li>
+         </ul>
+        
+        
+        `;
+    }
+}
