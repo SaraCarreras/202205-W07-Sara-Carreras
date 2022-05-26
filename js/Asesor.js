@@ -12,4 +12,14 @@ export class Asesor extends Personaje {
     phrase() {
         super.phrase(this.communicate);
     }
+
+    specialSkills() {
+        return `
+         <ul class="list-unstyled">                  
+            <li>Asesora a: ${this.adviserOf}</li>
+         </ul>
+        
+        
+        `;
+    }
 }

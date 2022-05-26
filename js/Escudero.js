@@ -11,6 +11,15 @@ export class Escudero extends Personaje {
     }
 
     phrase() {
-        super.phrase(this.communicate);
+        return super.phrase(this.communicate);
+    }
+
+    specialSkills() {
+        return `
+        <ul class="list-unstyled">
+            <li>Sirve a: ${this.squireOf}</li>
+            <li>Grado de pelotismo: ${this.submission}</li>
+        </ul>
+    `;
     }
 }
