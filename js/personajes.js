@@ -5,28 +5,16 @@ import { Luchador } from './Luchador.js';
 import { Asesor } from './Asesor.js';
 import { Escudero } from './Escudero.js';
 
-export const kingChar = new Rey('Joffrey Baratheon', 'Baratheon', 12, 0.5);
-const knightCharJaime = new Luchador(
-    'Jaime Lannister',
-    'Lannister',
-    32,
-    'sword',
-    7
-);
-const knightCharDae = new Luchador(
-    'Daenerys Targaryen',
-    'Targaryen',
-    20,
-    'Dragons',
-    5
-);
+export const kingChar = new Rey('Joffrey', 'Baratheon', 15, 0.5);
+const knightCharJaime = new Luchador('Jaime', 'Lannister', 35, 'Espada', 7);
+const knightCharDae = new Luchador('Daenerys', 'Targaryen', 20, 'Dragones', 9);
 
-const adviserChar = new Asesor('Tyrion Lannister', 'Lannister', 32, 'Daenerys');
+const adviserChar = new Asesor('Tyrion', 'Lannister', 26, 'Daenerys');
 
 const squireChar = new Escudero(
     'Bronn',
     'Stokeworth',
-    34,
+    41,
     'Jaime Lannister',
     9
 );
